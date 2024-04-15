@@ -22,6 +22,9 @@ public class Task2 {
             }
         } catch (FileNotFoundException e) {
             System.out.println("Error! " + e.getMessage());
+        } catch (IOException e) {
+            System.err.println("Reading error!: " + fileName);
+            e.printStackTrace();
         }
     }
 }
